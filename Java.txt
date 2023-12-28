@@ -1,3 +1,6 @@
+=================================
+||      Java First Class       ||
+=================================
 App / Software /Program 
 
 start point has to be defined as main method
@@ -11,4 +14,130 @@ JVM look for the start point in the programm
 JVM find the main method 
 if main method is not in the program then we cannot execute our program 
 
-What is Is Method ?
+What is Is Method In Java ?
+=> 1) Task or work or activity we have to write it into method 
+   2) Java => methods =>1)name 
+                        2) Parameter 
+                        3)Body
+                        4)Return type
+                        Method have a name
+                        Some parameter (Inputs)
+                        Task (Activity / Body)
+                        return type
+
+eg. return type name (parameter) {
+    Body
+    -------
+    -------
+    -------
+}
+
+void add(){         // return type => void / int /float 
+    int a=10;
+    int b=20;
+    int sum = a+b;
+    return sum;
+}
+
+add();
+
+void display(){ // if we dont have return type then we used Void keyword 
+    System.out.println("Hello World");
+}
+
+display();
+
+int display(int a){
+    int num = a;
+    System.out.printls(num);
+    return num;
+}
+
+display(10);
+                                        JVM
+os =>   c program                   Java Program
+        void main(){                main method   // starting point of the application 
+            printf("Hello");
+             }                      
+                                    class Launch
+                                    {
+                                        static public void main(String[] args)       //static for accecible to the JVN
+                                        {
+                                            System.out.printl("iNeuron");
+                                        }
+                                    }
+                                    
+main => name & JVM will search for this name only
+void => It is return type (Java Main() will not anything)
+
+public => To increase visibility
+
+static =>can be called without object creation
+
+String [] args
+    => To receive command Line arguments
+
+class Launch
+{
+    public static void main(String []args){     //string of arguments
+
+    System.out.println("Hello");
+
+    }
+}
+ => javac Launch.java   // compiler will compile the code 
+ => java Launch         // execute the Launch.java file       
+
+-> javac Launch.java
+-> java Launch (iNeuron benguluru) String of arguments
+
+
+os => JVM => 
+        ==========================
+args => || iNeuron || benguluru ||
+        ==========================
+index =>      0           1 
+
+class Launch 
+{
+    public static void main(String[] args){
+        System.out.println("Hello All");
+        System.out.println(args[0]);
+        System.out.println("args[0]");
+    }
+}
+
+javac Launch.java 
+
+java Launch iNeuron   // command line arguments passing one 
+
+output : Hello All
+         iNeuron
+         args[0]
+
+String[] sagar 
+Java Launch (_____) information called => command line arguments
+        "iNeuron"
+        number/boolean
+        it takes only String 
+        JVM is design in a such way that it look only for String arguments to the main method
+=> public => visibility
+=> static => Accesibility
+=> void   => return type
+=> main   => JVM
+=> String args[] => To return command line arguments
+
+=> Syntax 
+
+public static void main (String[] args) 
+public static void main (String)
+
+
+static public void main(________)
+
+static public main void () Not allowed
+
+public static void main (String ...args) allowed
+
+
+
