@@ -1,0 +1,14 @@
+App / Software /Program 
+
+start point has to be defined as main method
+
+operating System => He is the one whoese operate all the application handle which are present in the computers 
+
+Java Code => JavaC => ClassFile => JVM (Execute the code) =>
+JVM is a software is design in c programming langause 
+
+JVM look for the start point in the programm 
+JVM find the main method 
+if main method is not in the program then we cannot execute our program 
+
+What is Is Method ?
