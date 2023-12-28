@@ -139,5 +139,13 @@ static public main void () Not allowed
 
 public static void main (String ...args) allowed
 
+=> Variable => Store some information (data)
 
+a = 10 
+
+
+Statically typed                Dynamically typed
+Type of data being checked      Type of data being not checked
+during compile time             during compile time
+c,c++,Java                      python,javascript
 
