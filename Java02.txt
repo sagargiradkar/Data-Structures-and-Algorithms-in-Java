@@ -133,3 +133,47 @@ Rule5 : There is no length limit on java identifiers ,but still it is a good pra
         length of the identifier not more than 15 characters.
 
 int priorityOfThreadWithMinValue = 1;
+
+Reserved Words
+---------------
+if 
+while
+for 
+else
+String
+try
+catch
+throws
+assert
+true
+false
+True
+False
+
+Rule6: We cant use Reserved words as a identifier
+        eg : int if = 10 ;//compiler Error
+
+
+
+Rule7:Predefined classnames can be used as identifier
+    eg#1
+        String Runnable = "Sagar"
+        System.out.println(Runnable)
+    eg#2
+        int String = 10;
+        System.out.println(String); // 10
+NOTE : Even through Predefined classNames can be used as an identifiers,it is not good practise to keeo.
+
+String --------------> inbuilt classname
+Runnable ------------> inbuilt interface
+Student -------------> Costomize/UserDefined classname
+
+ReservedWords
+-------------
+It is a built in words/keywords which has already predefined meaning to it
+
+Note : Literals any constant value which can be assigned to a variable is called Literals   
+        int data = 10;
+            Literals -> 10
+Note : for boolean datatypes the only values allowed for a variables is "true,false",other than this is we are try to keep any values it 
+        result in "CompilerTimeOutError",
