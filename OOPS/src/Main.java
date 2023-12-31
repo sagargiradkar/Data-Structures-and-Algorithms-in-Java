@@ -19,7 +19,9 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		System.out.println("Size of long is :"+Long.SIZE);
+		System.out.println("MINVALUE of long is ::"+ Long.MIN_VALUE);
+		System.out.println("MAXVALUE of long is ::"+ Long.MAX_VALUE);
 	}
 
 }
