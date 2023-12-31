@@ -15,13 +15,34 @@ class Car{
 	String color;
 }
 
+//public class Main {
+//
+//	public static void main(String[] args) {
+//		// TODO Auto-generated method stub
+//		long firstData = 922337203685477580L;
+//		long SecondData = 922337203685477580l;
+//		
+//		long data = 10L;
+//		long number = 5l;
+//		System.out.println(firstData);
+//		System.out.println(SecondData);
+//		System.out.println(data);
+//		System.out.println(number);
+//		
+//	}
+//
+//}
+
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("Size of long is :"+Long.SIZE);
-		System.out.println("MINVALUE of long is ::"+ Long.MIN_VALUE);
-		System.out.println("MAXVALUE of long is ::"+ Long.MAX_VALUE);
+		byte a = 10;
+		byte b = 5;
+		//byte c = a +b;
+		//byte result = a * b;
+		//System.out.println(c);
+		System.out.println(a+b);
+		
 	}
 
 }

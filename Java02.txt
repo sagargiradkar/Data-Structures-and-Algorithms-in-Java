@@ -344,3 +344,11 @@ Size of long is :: 64 (8 bytes)
 MINVALUE of long is ::-9223372036854775808
 MAXVALUE of long is ::9223372036854775807
 
+eg : long data = 10;
+     long data = 9223372036854775807;
+
+     long data = 10L; // now also no problem bz 10 is and we have added 'L' 
+	 long number = 5l;
+     if the data goes beyond the range of int ,then to keep the data inside long data type we need to explicitly suffix the 
+     data with "L" or 'l' otherwise it could result in "CompileTimeError".
+    
