@@ -78,3 +78,13 @@ NOte: Datatypes are actually represented to the compiler and jv, using reserve w
             long ----------> Long(C)
             float ---------> Float(C)
             double --------> Double(C)
+
+===============================================================
+Primitive datatype
+====================
+======
+char :
+=======
+
+Datatype :- Specific Formate :- store it into memmory in the form of 0,1 ->memmory
+
