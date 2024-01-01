@@ -351,4 +351,6 @@ eg : long data = 10;
 	 long number = 5l;
      if the data goes beyond the range of int ,then to keep the data inside long data type we need to explicitly suffix the 
      data with "L" or 'l' otherwise it could result in "CompileTimeError".
-    
+
+
+
