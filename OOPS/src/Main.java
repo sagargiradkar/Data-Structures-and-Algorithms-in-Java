@@ -44,11 +44,26 @@ class Car{
 //	}
 //
 //}
+//
+//public class Main {
+//
+//	public static void main(String[] args) {
+//		float f =10.5f;	
+//		float fl =25.5f;	
+//	}
+//
+//}
+
 
 public class Main {
 
 	public static void main(String[] args) {
-		float f =10.5;	
+		double d = 1.7976931348623157E308;
+		System.out.println("Size of Double is :"+Double.SIZE);
+		System.out.println("MINVALUE of Double is ::"+ Double.MIN_VALUE);
+		System.out.println("MAXVALUE of Double is ::"+ Double.MAX_VALUE);
+	
+		
 	}
 
 }

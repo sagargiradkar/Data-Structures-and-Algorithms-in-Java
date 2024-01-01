@@ -18,7 +18,7 @@ Datatypes
         b.realnumber
             1.float
             2.double
-folat 
+float 
 -----
 
 public class Main {
@@ -36,8 +36,45 @@ Size of float is :32(4 bytes) 1byte = 8 bits , 32/8 = 4 bytes
 MINVALUE of float is ::1.4E-45
 MAXVALUE of float is ::3.4028235E38
 
-eg: float a = 10.5
+Note : By default if u specify any real number / decimal number compiler will treat it as "double",to specify
+        to the compiler to treat it as float ,we need to suffix it with 'F' or 'f'
+eg: float f =10.5f;	
+	float fl =25.5f;	
+    float a = 10.5 //CE:possible loss of precession 
 Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
 	Type mismatch: cannot convert from double to float
 
 	at Main.main(Main.java:51)
+
+
+double
+------
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.println("Size of Double is :"+Double.SIZE);
+		System.out.println("MINVALUE of Double is ::"+ Double.MIN_VALUE);
+		System.out.println("MAXVALUE of Double is ::"+ Double.MAX_VALUE);
+	
+		
+	}
+
+}
+
+Size of Double is :64bits (1 byte = 8bit 64/8 = 8 bytes)
+MINVALUE of Double is ::4.9E-324
+MAXVALUE of Double is ::1.7976931348623157E308
+
+eg: double d = 23.567
+    double d = 1.7976931348623157E308
+
+NOte: Datatypes are actually represented to the compiler and jv, using reserve words 
+        reserve words are normally in "lower case".
+      To map primitive data as Object in JAVA from JDK1.5 concept of "Wrapper class" was introduced.
+            byte ----------> Byte(C)
+            short----------> Short(C)
+            int -----------> Integer(C)
+            long ----------> Long(C)
+            float ---------> Float(C)
+            double --------> Double(C)
