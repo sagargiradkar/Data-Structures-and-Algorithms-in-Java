@@ -88,3 +88,55 @@ char :
 
 Datatype :- Specific Formate :- store it into memmory in the form of 0,1 ->memmory
 
+int ----> Base 2 -----> 
+
+A B # @ 1 2                   ---------> Characters
+---------------------------------------------------------------
+char -> primitive datatype is used for storing the characteres 
+---------------------------------------------------------------
+
+A 0     
+B 1
+
+A 00
+B 01
+C 10
+D 11
+
+As number of character increase then the number of bits also increases to store the data into memmory 
+
+128 character are discovered  ( ASCII )
+A B C ------ X Y Z
+a b c ------ x y z
+1 2 3 ------ 7 8 9
+~ ! @ ------ ^ & *
+
+1 byte = 8 bit
+
+     Binary Number 
+     8 bit 
+A -> 00000000
+        UTF-16
+IEEE => 65536 -> Characters / Symbols 
+
+2^16 => 65536 => 16 bits => 2 byte
+
+UTF -> unicode => 2 bytes of memmory allocated 
+
+===> java -> utf -> 2 BYTES OF MEMMORY ALLOCATED 
+
+ASCII -> Binary , Dec , Hex => 128
+
+Unicode -> Binary , Decimal , Hexa => 65536 character
+
+0 to 128 remains same 
+A -> 65
+B -> 66
+
+a -> 97
+b -> 98
+
+Create a Table 
+English 
+Characters and there Decimal Values
+
