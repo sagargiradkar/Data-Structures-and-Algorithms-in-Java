@@ -33,16 +33,22 @@ class Car{
 //
 //}
 
+//public class Main {
+//
+//	public static void main(String[] args) {
+//		System.out.println("Size of float is :"+Float.SIZE);
+//		System.out.println("MINVALUE of float is ::"+ Float.MIN_VALUE);
+//		System.out.println("MAXVALUE of float is ::"+ Float.MAX_VALUE);
+//	
+//		
+//	}
+//
+//}
+
 public class Main {
 
 	public static void main(String[] args) {
-		byte a = 10;
-		byte b = 5;
-		//byte c = a +b;
-		//byte result = a * b;
-		//System.out.println(c);
-		System.out.println(a+b);
-		
+		float f =10.5;	
 	}
 
 }
