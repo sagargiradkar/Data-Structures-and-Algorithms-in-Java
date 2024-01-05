@@ -140,3 +140,70 @@ Create a Table
 English 
 Characters and there Decimal Values
 
+===> JAVA => UNICODE => UTF
+    char => 2 bytes
+
+=> Syntax :- ' ' (Always write character in single Quotes Not Double Quotes)
+        char a = 'A';
+        char b = 'B';
+        char c = 'AB'; // Not Valid
+        char d = '!'; Valid 
+Class For Character 
+====> 
+char => Character ===> Class 
+
+char should be in small letters 
+
+=> bytes ,short,int ,long,float,double,boolean,char
+array,String => Objects
+
+primitive => wrapper class => everything treated as Objects
+------------------------------------------------------------
+
+int a = 25; //Valid
+int b = 2; //Valid
+int c = a/b;
+System.out.println(c);
+12
+
+float c = a/b; // 
+
+Truncation / Rounding Zero
+Truncated => Rounding to Zero 
+
+====================================
+Importance of code snipits 
+        ---> more clearly 
+============================================================================
+==>    byte , short , int , long , float , double => Implicit typecasting ||
+============================================================================
+byte a = 45;
+double b;
+    b = a;  // 45
+
+    byte num1 = 45;
+		double num2;
+				num2 = num1;
+    (Type Casting / Numeric Promotion)
+
+internaly automatically data will be changed automatically  --> Implicit typecasting
+                                                            --> Numerica type Promotion
+double a = 45.5;
+byte b;
+b = (BYTE) a; // TYPE CASTING 
+
+#  .5555555 PRECISSION 
+
+=======================
+        OPERATORS
+=======================                                                        
+int a = 5 + 10;  => 15 
+
+Incrementation (++)        ||        Decrementation (--)
+int a = 5;  a = 5
+a = a + 1 ;
+
+int a = 5;
+a--;
+
+a = a - 1;

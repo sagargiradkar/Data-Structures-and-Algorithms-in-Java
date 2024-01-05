@@ -1,0 +1,27 @@
+------------------
+|| Java Class 4 ||
+------------------
+
+Operator -> Fundamental Java
+-> Incrementation -> pre , post incrementation 
+-> Decrementation -> pre , post Decrementation
+
+Operators in Java
+-> Arithmatic Operator (+,-,*,/,%)
+-> Incrementation and Decrementation (++ , --)
+-> Logical Operator (&& , || !)
+-> Assignment Operator  (=)
+-> Conditional -> Ternary Operator
+-> Bitwise & Shift  (& , ^) 
+-> Relational Operator 
+
+
+Arithmatic Operator :-
+
++ , - , * , / , % 
+
+Logical Operator :-
+
+&& , || , !
+
+AND => &&          OR => ||        NOT => !
