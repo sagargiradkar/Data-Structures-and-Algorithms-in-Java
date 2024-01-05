@@ -25,3 +25,41 @@ Logical Operator :-
 && , || , !
 
 AND => &&          OR => ||        NOT => !
+
+Relational Operator
+
+> < >= <= == != 
+
+Assignment Operator
+
+"== "
+
+=> Conditional Operator
+
+task / Operation / Activity 
+
+if - else       ||      Ternary Operator
+
+if - else 
+else - if 
+
+=> Ternary Operator :->
+
+int a = 10;
+int b = 20;
+
+if(a>b){
+    System.out.println(a);
+}
+else{
+    System.out.println(b);
+}
+
+int c = (a>b) ? a : b ;
+
+(Condition) ? (T) : (F) ;
+
+(T) ? (T) : (F) ;
+
+
+
