@@ -54,6 +54,26 @@ public class AddFirstLL
         }
         System.out.println("null");
     }
+    public void add(int idx,int data)
+    {
+        if(idx == 0)
+        {
+            addFirst(data);
+            return;
+        }
+        Node newNode = new Node(data);
+        Node temp = head ;
+        int i = 0;
+        while(i < idx-1)
+        {
+            temp = temp.next;
+            i++;
+        }
+
+        //i = idx-1 l temp-> prev
+        newNode.next = temp.next;
+        temp.next = newNode;
+    }
     public static void main(String[] args) {
         AddFirstLL ll = new AddFirstLL();
         ll.addFirst(19);
@@ -65,6 +85,7 @@ public class AddFirstLL
         ll.addLast(67);
         ll.printLL();
         ll.addLast(100);
+        ll.add(2, 82);
         ll.printLL();
     }
 }
