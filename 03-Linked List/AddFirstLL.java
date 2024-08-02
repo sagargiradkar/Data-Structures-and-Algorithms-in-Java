@@ -12,11 +12,13 @@ public class AddFirstLL
     }
     public static Node  head;
     public static Node  tail;
+    public static int size;
 
     public void addFirst(int data)
     {
         //step1 = create new node 
         Node newNode = new Node(data);
+        size ++;
         if(head == null){
             head = tail = newNode;
             return;
@@ -31,6 +33,7 @@ public class AddFirstLL
     public void addLast(int data)
     {
         Node newNode = new Node(data);
+        size++;
         if(head == null)
         {
             head = tail = newNode;
@@ -62,6 +65,7 @@ public class AddFirstLL
             return;
         }
         Node newNode = new Node(data);
+        size++;
         Node temp = head ;
         int i = 0;
         while(i < idx-1)
@@ -73,6 +77,7 @@ public class AddFirstLL
         //i = idx-1 l temp-> prev
         newNode.next = temp.next;
         temp.next = newNode;
+
     }
     public static void main(String[] args) {
         AddFirstLL ll = new AddFirstLL();
@@ -87,5 +92,6 @@ public class AddFirstLL
         ll.addLast(100);
         ll.add(2, 82);
         ll.printLL();
+        System.out.println(ll.size);
     }
 }
