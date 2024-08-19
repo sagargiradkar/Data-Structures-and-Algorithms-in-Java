@@ -26,7 +26,6 @@
     - [Greedy Algorithms](#greedy-algorithms)
     - [Backtracking](#backtracking)
   - [Contributing](#contributing)
-  - [License](#license)
 
 ## Introduction
 
@@ -159,10 +158,6 @@ I welcome contributions from anyone who wants to improve this project. If you ha
 - Write clear and concise commit messages.
 - Include comments and documentation where necessary.
 - Ensure that your code passes all tests.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
