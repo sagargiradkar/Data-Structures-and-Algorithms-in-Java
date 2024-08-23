@@ -40,10 +40,30 @@ public class LinkedLists {
         Node temp = head;
         while(temp != null)
         {
-            System.out.print(temp.data + " => ");
+            System.out.print(temp.data + " -> ");
             temp = temp.next;
         }
-        System.out.println();
+        System.out.println("null");
+    }
+    public void add(int indx,int data)
+    {
+        if(indx == 0)
+        {
+            addFirst(data);
+            return;
+        }
+        Node newNode = new Node(data);
+        Node temp = head;
+        int i = 0;
+
+        while(i < indx-1)
+        {
+            temp = temp.next;
+            i++;
+        }
+        //i=idx-1; temp -< prev
+        newNode.next = temp.next;
+        temp.next = newNode;
     }
     public static void main(String[] args) {
         LinkedLists ll = new LinkedLists();
@@ -58,6 +78,8 @@ public class LinkedLists {
         ll.addLast(13);
         ll.printLL();
         ll.addFirst(123);
+        ll.printLL();
+        ll.add(3, 134);
         ll.printLL();
     }
 }
