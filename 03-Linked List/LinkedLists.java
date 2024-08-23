@@ -11,10 +11,11 @@ public class LinkedLists {
     }
     public static Node head = null;
     public static Node tail = null;
-
+    public static int size;
     public void addFirst(int data)
     {
         Node newNode = new Node(data);
+        size++;
         if(head == null)
         {
             head = tail = newNode;
@@ -26,6 +27,7 @@ public class LinkedLists {
     public void addLast(int data)
     {
         Node newNode = new Node(data);
+        size++;
         if(head == null)
         {
             head = tail = newNode;
@@ -44,6 +46,7 @@ public class LinkedLists {
             temp = temp.next;
         }
         System.out.println("null");
+       
     }
     public void add(int indx,int data)
     {
@@ -53,6 +56,7 @@ public class LinkedLists {
             return;
         }
         Node newNode = new Node(data);
+        size++;
         Node temp = head;
         int i = 0;
 
@@ -81,5 +85,6 @@ public class LinkedLists {
         ll.printLL();
         ll.add(3, 134);
         ll.printLL();
+        System.out.println("Size of LL :: "+ll.size);
     }
 }
