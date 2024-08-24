@@ -150,6 +150,20 @@ public class LinkedLists {
     {
         return helper(head, key);
     }
+
+    public void reverse()
+    {
+        Node prev = null;
+        Node curr = tail = head;
+        Node next;
+        while(curr != null){
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        head = prev;
+    }
     public static void main(String[] args) {
         LinkedLists ll = new LinkedLists();
         ll.addFirst(1);
@@ -185,5 +199,8 @@ public class LinkedLists {
         }else{
             System.out.println("Key is found");
         }
+        ll.printLL();
+        ll.reverse();
+        ll.printLL();
     }
 }
