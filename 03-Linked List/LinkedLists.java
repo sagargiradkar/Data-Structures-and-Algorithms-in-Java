@@ -132,6 +132,24 @@ public class LinkedLists {
         //key not found
         return -1;
     }
+    public int helper(Node head , int key){
+        if(head == null)
+        {
+            return -1;
+        }
+        if(head.data == key){
+            return 0;
+        }
+        int idx = helper(head.next, key);
+        if(idx == -1){
+            return -1;
+        }
+        return idx +1;
+    }
+    public int recSearch(int key)
+    {
+        return helper(head, key);
+    }
     public static void main(String[] args) {
         LinkedLists ll = new LinkedLists();
         ll.addFirst(1);
@@ -157,6 +175,12 @@ public class LinkedLists {
         ll.printLL();
         System.out.println("Size of LL :: "+ll.size);
         if(ll.itrSearch(44) == -1){
+            System.out.println("Key Not Found");
+        }else{
+            System.out.println("Key is found");
+        }
+        System.out.println("Size of LL :: "+ll.size);
+        if(ll.recSearch(4) == -1){
             System.out.println("Key Not Found");
         }else{
             System.out.println("Key is found");
