@@ -187,47 +187,109 @@ public class LinkedLists {
         prev.next = prev.next.next;
         return;
     }
+    //slow-fast Approach
+    public Node findMid(Node head){
+        Node slow = head;
+        Node fast = head;
+
+        while(fast!=null && fast.next !=null)
+        {
+            slow = slow.next;//+1
+            fast = fast.next.next;//+2
+        }
+        return slow;//slw is my midnode
+
+    }
+
+    public boolean checkPalindrome()
+    {
+        if(head == null || head.next ==null){
+            return true;
+        }
+        //step 1 - find mid
+        Node midNode = findMid(head);
+        //step 2 - reverse 2nd half
+        Node prev = null;
+        Node curr = midNode;
+        Node next;
+        while(curr != null){
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+
+        }
+
+        Node right = prev;
+        Node left = head;
+
+        //step3 - check left and right half
+        while(right != null){
+            if(left.data != right.data){
+                return false;
+            }
+            left = left.next;
+            right = right.next;
+        }
+        return true;
+    }
     public static void main(String[] args) {
         LinkedLists ll = new LinkedLists();
-        ll.addFirst(1);
+        // ll.addFirst(1);
+        // ll.printLL();
+        // ll.addFirst(2);
+        // ll.printLL();
+        // ll.addFirst(3);
+        // ll.printLL();
+        // ll.addLast(4);
+        // ll.printLL();
+        // ll.addLast(13);
+        // ll.printLL();
+        // ll.addFirst(123);
+        // ll.printLL();
+        // ll.add(3, 134);
+        // ll.printLL();
+        // System.out.println("Size of LL :: "+ll.size);
+        // ll.printLL();
+        // System.out.println("removeFirst of LL :: "+ll.removeFirst());
+        // System.out.println("Size of LL :: "+ll.size);
+        // ll.printLL();
+        // System.out.println("removeLast of LL :: "+ll.removeLast());
+        // ll.printLL();
+        // System.out.println("Size of LL :: "+ll.size);
+        // if(ll.itrSearch(44) == -1){
+        //     System.out.println("Key Not Found");
+        // }else{
+        //     System.out.println("Key is found");
+        // }
+        // System.out.println("Size of LL :: "+ll.size);
+        // if(ll.recSearch(4) == -1){
+        //     System.out.println("Key Not Found");
+        // }else{
+        //     System.out.println("Key is found");
+        // }
+        // ll.printLL();
+        // ll.reverse();
+        // ll.printLL();
+        // ll.reverse();
+        // ll.printLL();
+        // ll.deleteNthFromEnd(3);
+        // ll.printLL();
+
+        ll.addLast(1);
+        ll.addLast(2);
+        ll.addLast(2);
+        ll.addLast(1);
+
         ll.printLL();
-        ll.addFirst(2);
+        System.out.println(ll.checkPalindrome());
+
+        ll.addLast(1);
+        ll.addLast(2);
+        ll.addLast(1);
+
         ll.printLL();
-        ll.addFirst(3);
-        ll.printLL();
-        ll.addLast(4);
-        ll.printLL();
-        ll.addLast(13);
-        ll.printLL();
-        ll.addFirst(123);
-        ll.printLL();
-        ll.add(3, 134);
-        ll.printLL();
-        System.out.println("Size of LL :: "+ll.size);
-        ll.printLL();
-        System.out.println("removeFirst of LL :: "+ll.removeFirst());
-        System.out.println("Size of LL :: "+ll.size);
-        ll.printLL();
-        System.out.println("removeLast of LL :: "+ll.removeLast());
-        ll.printLL();
-        System.out.println("Size of LL :: "+ll.size);
-        if(ll.itrSearch(44) == -1){
-            System.out.println("Key Not Found");
-        }else{
-            System.out.println("Key is found");
-        }
-        System.out.println("Size of LL :: "+ll.size);
-        if(ll.recSearch(4) == -1){
-            System.out.println("Key Not Found");
-        }else{
-            System.out.println("Key is found");
-        }
-        ll.printLL();
-        ll.reverse();
-        ll.printLL();
-        ll.reverse();
-        ll.printLL();
-        ll.deleteNthFromEnd(3);
-        ll.printLL();
+        System.out.println(ll.checkPalindrome());
+
     }
 }
