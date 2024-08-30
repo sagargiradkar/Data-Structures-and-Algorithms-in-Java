@@ -1,12 +1,13 @@
-class Solution {
-    public ArrayList<ArrayList<Integer>> nQueen(int n) {
+import java.util.*;
+class NQueen {
+    public static ArrayList<ArrayList<Integer>> nQueen(int n) {
         ArrayList<ArrayList<Integer>> result = new ArrayList<>();
         ArrayList<Integer> board = new ArrayList<>();
         solveNQueens(n, 0, board, result);
         return result;
     }
 
-    private void solveNQueens(int n, int col, ArrayList<Integer> board, ArrayList<ArrayList<Integer>> result) {
+    private static void solveNQueens(int n, int col, ArrayList<Integer> board, ArrayList<ArrayList<Integer>> result) {
         if (col == n) {
             result.add(new ArrayList<>(board));
             return;
@@ -21,7 +22,7 @@ class Solution {
         }
     }
 
-    private boolean isSafe(int row, int col, ArrayList<Integer> board) {
+    private static boolean isSafe(int row, int col, ArrayList<Integer> board) {
         for (int c = 0; c < col; c++) {
             int r = board.get(c);
             if (r == row || Math.abs(r - row) == Math.abs(c - col)) {
@@ -29,5 +30,8 @@ class Solution {
             }
         }
         return true;
+    }
+    public static void main(String[] args) {
+        System.out.println(nQueen(3));
     }
 }
