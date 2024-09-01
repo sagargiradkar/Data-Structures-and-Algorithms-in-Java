@@ -1,5 +1,5 @@
 
-public class Pallindrome {
+public class D_01_PallindromeNumber {
     public static boolean isPalindrome(int x) {
         if(x<0){
             return false;

@@ -1,4 +1,4 @@
-public class isPowerOfTwo {
+public class D_02_isPowerOfTwo {
         public static boolean isPowerOfTwo(int n) {
             // if(n<1){
             //     return false;
