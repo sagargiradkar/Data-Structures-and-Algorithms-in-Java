@@ -1,5 +1,6 @@
+package September2024;
+import java.io.*;
 import java.util.*;
-
 public class D_02_MinimumCostPath {
     
     // Direction vectors for moving in the grid
