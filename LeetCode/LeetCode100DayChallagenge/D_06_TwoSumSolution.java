@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.Map;
+
 public class D_06_TwoSumSolution {
     public int[] twoSum(int[] nums, int target) {
         // Create a hashmap to store the numbers and their indices
@@ -23,19 +24,48 @@ public class D_06_TwoSumSolution {
         // Return an empty array if no solution is found
         return new int[] {};
     }
-    
+
     public static void main(String[] args) {
-        D_06_TwoSumSolution sol = new D_06_TwoSumSolution();
-        int[] nums = {2, 7, 11, 15};
-        int target = 9;
+        // Example 1: Using D_06_TwoSumSolution
+        D_06_TwoSumSolution sol1 = new D_06_TwoSumSolution();
+        int[] nums1 = {2, 7, 11, 15};
+        int target1 = 9;
         
-        int[] result = sol.twoSum(nums, target);
+        int[] result1 = sol1.twoSum(nums1, target1);
         
-        if(result.length > 0) {
-            System.out.println("Indices: " + result[0] + ", " + result[1]);
+        if (result1.length > 0) {
+            System.out.println("D_06_TwoSumSolution Indices: " + result1[0] + ", " + result1[1]);
         } else {
-            System.out.println("No two sum solution found.");
+            System.out.println("No two sum solution found in D_06_TwoSumSolution.");
+        }
+
+        // Example 2: Using Solution
+        Solution sol2 = new Solution();
+        int[] nums2 = {3, 2, 4};
+        int target2 = 6;
+        
+        int[] result2 = sol2.twoSum(nums2, target2);
+        
+        if (result2[0] != 0 || result2[1] != 0) {
+            System.out.println("Solution Indices: " + result2[0] + ", " + result2[1]);
+        } else {
+            System.out.println("No two sum solution found in Solution.");
         }
     }
 }
+
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        int[] ans = new int[2];
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
+                if (nums[i] + nums[j] == target) {
+                    ans[0] = i;
+                    ans[1] = j;
+                    return ans;
+                }
+            }
+        }
+        return ans;
+    }
 }
