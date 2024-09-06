@@ -3,8 +3,7 @@ import java.util.Set;
 
 public class D_04_RobotSim {
     public int robotSim(int[] commands, int[][] obstacles) {
-        int[] directions   
- = {0, 1, 0, -1, 0}; // North, East, South, West
+        int[] directions   = {0, 1, 0, -1, 0}; // North, East, South, West
         int currDir = 0; // Initially facing north
         int x = 0, y = 0; // Starting coordinates
         int maxDist = 0;
