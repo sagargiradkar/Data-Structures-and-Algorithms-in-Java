@@ -32,7 +32,7 @@ class Solution {
             arraySum += num;
         }
 
-        // The missing number is the difference between totalSum and arraySum
+        // The missing number difference between totalSum and arraySum
         return totalSum - arraySum;
     }
 }
