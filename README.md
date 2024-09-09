@@ -93,6 +93,9 @@ In addition to the above topics, I also solve problems from the following platfo
 - **RajaSoftware**  
   Practice problems and coding tasks from RajaSoftware.
 
+- **Principle Global**  
+  Practice problems and coding tasks from Principle Global.
+
 ## How to Use
 
 1. Clone the repository:
