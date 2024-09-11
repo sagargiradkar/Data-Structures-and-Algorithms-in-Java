@@ -9,9 +9,11 @@ public class SDE_04_Missing_in_Array {
         
         // Finding the missing number
         int missingNumber = solution.missingNumber(n, arr);
+        int missingNumber1 = solution.missingNumber1(n, arr);
         
         // Printing the result
         System.out.println("The missing number is: " + missingNumber);
+        System.out.println("The missing number is: " + missingNumber1);
     }
 }
 
@@ -30,4 +32,16 @@ class Solution {
         // The missing number is the difference between the expected sum and actual sum
         return expectedSum - actualSum;
     }
+    int missingNumber1(int n, int arr[]) {
+        int a = 1;
+        for(int i=2; i<=n; i++){
+            a = a^i;
+            
+        }
+        int b = arr[0];
+        for(int i=1; i<arr.length; i++){
+            b = b ^ arr[i];
+        }
+        return a^b;
+     }
 }
