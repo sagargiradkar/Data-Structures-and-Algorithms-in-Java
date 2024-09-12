@@ -4,6 +4,7 @@ public class Optimize_X_to_Power_N {
             return 1;
         }
         int halfPowerSq = optimizedPower(a, n/2) * optimizedPower(a, n/2);
+        
         //nn is odd
         if(n%2 != 0){
             halfPowerSq = a * halfPowerSq;
