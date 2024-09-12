@@ -26,23 +26,23 @@ The repository is divided into multiple directories, each focusing on specific t
 6. **05-Recursion**  
    Recursive solutions to problems, showcasing the power of recursive algorithms.
 
-7. **06-Divide and Conquer**  
-   Implementations of divide-and-conquer algorithms such as merge sort, quick sort, etc.
-
-8. **07-Time and Space**  
-   Programs focusing on analyzing the time and space complexity of algorithms.
-
-9. **08-Backtracking**  
-   Solutions involving backtracking algorithms such as the N-Queens problem, Sudoku solver, etc.
-
-10. **09-ArrayList**  
-    Understanding the ArrayList class and its methods with practical examples.
-
-11. **10-Basic Sorting Algorithms**  
+7. **06-Basic Sorting Algorithms**  
     Implementations of basic sorting algorithms like bubble sort, selection sort, insertion sort, etc.
 
-12. **11-Bit Manipulation**  
+8. **07-Divide and Conquer**  
+   Implementations of divide-and-conquer algorithms such as merge sort, quick sort, etc.
+
+9. **08-Time and Space**  
+   Programs focusing on analyzing the time and space complexity of algorithms.
+
+10. **09-Backtracking**  
+   Solutions involving backtracking algorithms such as the N-Queens problem, Sudoku solver, etc.
+
+11. **10-Bit Manipulation**  
     Programs utilizing bitwise operators for solving various problems.
+
+12. **11-ArrayList**  
+    Understanding the ArrayList class and its methods with practical examples.
 
 13. **12-Linked List**  
     Implementation of singly and doubly linked lists and related operations.
