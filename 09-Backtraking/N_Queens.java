@@ -29,6 +29,7 @@ public class N_Queens {
         // Base case: if all queens are placed
         if (row == board.length) {
             printBoard(board);
+            count++;
             return;
         }
 
@@ -57,9 +58,9 @@ public class N_Queens {
         }
         System.out.println("-------------");
     }
-
+    static int count = 0;
     public static void main(String[] args) {
-        int n = 4; // Set n as 4 for this example, but you can change it to any valid size
+        int n = 5; // Set n as 4 for this example, but you can change it to any valid size
         char[][] board = new char[n][n];
 
         // Initialize board with 'X' representing empty spaces
@@ -71,5 +72,6 @@ public class N_Queens {
 
         // Solve the N-Queens problem
         nQueen(board, 0);
+        System.out.println("Total ways to solve n queens ="+count);
     }
 }
