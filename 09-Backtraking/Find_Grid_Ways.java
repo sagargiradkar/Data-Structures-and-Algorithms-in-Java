@@ -11,6 +11,8 @@ public class Find_Grid_Ways {
         int w2 =gridWays(i, j+1, n, m);
         return w1 + w2;
     }
+
+    
     public static void main(String[] args) {
         int n = 3, m = 3;
         System.out.println("No. of ways to grid :: "+gridWays(0, 0, n, m));
