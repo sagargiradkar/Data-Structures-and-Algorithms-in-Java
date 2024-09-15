@@ -1,4 +1,4 @@
-public class AddLastLL {
+public class LL_04_AddLastLL {
     public static class Node {
         int data;
         Node next;
@@ -24,7 +24,7 @@ public class AddLastLL {
         tail = newNode;
     }
     public static void main(String[] args) {
-        AddLastLL ll = new AddLastLL();
+        LL_04_AddLastLL ll = new LL_04_AddLastLL();
         ll.addLast(1);
         ll.addLast(2);
         ll.addLast(3);

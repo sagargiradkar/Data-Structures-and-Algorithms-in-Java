@@ -1,4 +1,4 @@
-public class PrintLL {
+public class LL_01_PrintLL {
 
     public static class Node
     {
@@ -24,7 +24,7 @@ public class PrintLL {
         System.out.println();
     }
     public static void main(String[] args) {
-        PrintLL ll = new PrintLL();
+        LL_01_PrintLL ll = new LL_01_PrintLL();
         ll.print();
     }
 }

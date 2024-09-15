@@ -1,4 +1,4 @@
-public class LinkedLists {
+public class LL_05_LinkedLists {
     public static class Node
     {
         int data;
@@ -234,7 +234,7 @@ public class LinkedLists {
         return true;
     }
     public static void main(String[] args) {
-        LinkedLists ll = new LinkedLists();
+        LL_05_LinkedLists ll = new LL_05_LinkedLists();
         // ll.addFirst(1);
         // ll.printLL();
         // ll.addFirst(2);

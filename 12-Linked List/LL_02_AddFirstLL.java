@@ -1,4 +1,4 @@
-public class AddFirstLL
+public class LL_02_AddFirstLL
  {
     public static class Node 
     {
@@ -80,7 +80,7 @@ public class AddFirstLL
 
     }
     public static void main(String[] args) {
-        AddFirstLL ll = new AddFirstLL();
+        LL_02_AddFirstLL ll = new LL_02_AddFirstLL();
         ll.addFirst(19);
         ll.printLL();
         ll.addFirst(10);

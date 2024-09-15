@@ -1,4 +1,4 @@
-public class AddDataLL
+public class LL_03_AddDataLL
 {
     public static class Node {
         int data ;
@@ -26,7 +26,7 @@ public class AddDataLL
    
 
   public static void main(String[] args) {
-    AddDataLL ll = new AddDataLL();
+    LL_03_AddDataLL ll = new LL_03_AddDataLL();
     ll.addData(1);
     ll.addData(2);
     ll.addData(3);
