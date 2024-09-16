@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class StsckUsingJC {
+public class ST_04_Stack_Using_Java_Collections {
     public static void main(String[] args) {
         Stack <Integer> s = new Stack<Integer>();
         s.push(1);
