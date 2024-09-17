@@ -8,7 +8,7 @@ The repository is divided into multiple directories, each focusing on specific t
 
 ### Directory List
 
-1. **00-BasicProgram**  
+1. **00-Basic Math Program**  
    Basic programs to understand the fundamental concepts of Java.
 
 2. **01-Pattern Programs**  
