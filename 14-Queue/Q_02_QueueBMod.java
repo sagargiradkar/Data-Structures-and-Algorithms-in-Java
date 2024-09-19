@@ -1,4 +1,4 @@
-public class QueueBMod {
+public class Q_02_QueueBMod {
 
     static class Queue {
         int arr[];

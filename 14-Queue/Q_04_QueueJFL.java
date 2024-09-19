@@ -1,5 +1,5 @@
 import java.util.*;
-public class QueueJFL {
+public class Q_04_QueueJFL {
     public static void main(String[] args) {
         Queue<Integer> q = new LinkedList<>();
         q.add(1);

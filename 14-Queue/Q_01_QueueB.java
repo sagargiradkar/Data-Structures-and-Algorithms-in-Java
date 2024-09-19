@@ -1,4 +1,4 @@
-public class QueueB {
+public class Q_01_QueueB {
 
     static class Queue
     {

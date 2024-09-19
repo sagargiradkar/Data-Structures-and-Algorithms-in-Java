@@ -1,4 +1,4 @@
-public class OueueLL {
+public class Q_03_OueueLL {
     static class Node 
     {
         int data ;

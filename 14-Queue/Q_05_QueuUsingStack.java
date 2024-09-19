@@ -1,5 +1,5 @@
 import java.util.*;
-public class QueuUsingStack {
+public class Q_05_QueuUsingStack {
 
     static class Queue{
         static Stack<Integer> s1 = new Stack<>();
