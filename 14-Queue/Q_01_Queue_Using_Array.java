@@ -1,8 +1,7 @@
-public class Q_01_QueueB {
+public class Q_01_Queue_Using_Array {
 
-    static class Queue
-    {
-        static int arr[] ;
+    static class Queue {
+        static int arr[];
         static int size;
         static int rear;
 
@@ -11,15 +10,13 @@ public class Q_01_QueueB {
             size = n;
             rear = -1;
         }
-        
-        public static boolean isEmplty()
-        {
+
+        public static boolean isEmplty() {
             return rear == -1;
         }
-        public static void add(int data)
-        {
-            if(rear == size -1)
-            {
+
+        public static void add(int data) {
+            if (rear == size - 1) {
                 System.out.println("Queue is full");
                 return;
             }
@@ -27,24 +24,21 @@ public class Q_01_QueueB {
             arr[rear] = data;
         }
 
-        public static int remove()
-        {
-            if(isEmplty())
-            {
+        public static int remove() {
+            if (isEmplty()) {
                 System.out.println("Queue is empty");
                 return -1;
             }
             int front = arr[0];
             for (int i = 0; i < rear; i++) {
-                arr[i] = arr[i+1];
+                arr[i] = arr[i + 1];
             }
-            rear = rear -1 ;
+            rear = rear - 1;
             return front;
         }
-        public static int peek()
-        {
-            if(isEmplty())
-            {
+
+        public static int peek() {
+            if (isEmplty()) {
                 System.out.println("Que is empty");
                 return -1;
             }
@@ -52,15 +46,15 @@ public class Q_01_QueueB {
         }
 
     }
+
     public static void main(String[] args) {
         Queue q = new Queue(5);
         q.add(1);
         q.add(2);
         q.add(3);
 
-        while(!q.isEmplty())
-        {
-            System.out.println(q.peek());
+        while (!q.isEmplty()) {
+            System.out.print(q.peek()+" ");
             q.remove();
         }
     }

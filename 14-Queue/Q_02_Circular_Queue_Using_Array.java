@@ -1,4 +1,4 @@
-public class Q_02_QueueBMod {
+public class Q_02_Circular_Queue_Using_Array {
 
     static class Queue {
         int arr[];
@@ -61,7 +61,7 @@ public class Q_02_QueueBMod {
     }
 
     public static void main(String[] args) {
-        Queue q = new Queue(3);
+        Queue q = new Queue(10);
         q.add(1);
         q.add(2);
         q.add(3);
@@ -69,9 +69,14 @@ public class Q_02_QueueBMod {
         q.add(4);
         System.out.println(q.remove());
         q.add(5);
-
+        q.add(1);
+        q.add(2);
+        q.add(3);
+        q.add(1);
+        q.add(2);
+        q.add(3);
         while (!q.isEmpty()) {
-            System.out.println(q.peek());
+            System.out.print(q.peek()+" ");
             q.remove();
         }
     }
