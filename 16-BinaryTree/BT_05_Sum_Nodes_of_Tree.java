@@ -1,4 +1,4 @@
-public class BT_04_Count_Nodes_of_Tree {
+public class BT_05_Sum_Nodes_of_Tree {
     public static class Node {
         int data;
         Node left;
@@ -25,16 +25,14 @@ public class BT_04_Count_Nodes_of_Tree {
             return newNode;
         }
 
-        public static int count(Node root) {
+        public static int sum(Node root) {
             if (root == null) {
                 return 0;
             }
-
-            int leftCount = count(root.left);
-            int rightCount = count(root.right);
-            return (leftCount + rightCount) + 1;
+            int leftSum = sum(root.left);
+            int rightSum = sum(root.right);
+            return (leftSum + rightSum) + root.data;
         }
-
     }
 
     public static void main(String[] args) {
@@ -42,6 +40,6 @@ public class BT_04_Count_Nodes_of_Tree {
         BinaryTree tree = new BinaryTree();
         Node root = tree.buildTree(nodes);
         System.out.println("Root of the tree: " + root.data);
-        System.out.println("Total Number of node ::" + tree.count(root));
+        System.out.println("Sum of root nodes ::"+tree.sum(root));
     }
 }
