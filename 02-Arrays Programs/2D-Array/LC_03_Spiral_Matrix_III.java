@@ -1,5 +1,5 @@
 
-public class Spiral_Matrix_III {
+public class LC_03_Spiral_Matrix_III {
     public int[][] spiralMatrixIII(int rows, int cols, int rStart, int cStart) {
         // Directions: Right, Down, Left, Up
         int[][] directions = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
@@ -40,7 +40,7 @@ public class Spiral_Matrix_III {
     }
 
     public static void main(String[] args) {
-        Spiral_Matrix_III solution = new Spiral_Matrix_III();
+        LC_03_Spiral_Matrix_III solution = new LC_03_Spiral_Matrix_III();
         
         // Test Case 1
         int[][] result1 = solution.spiralMatrixIII(1, 4, 0, 0);

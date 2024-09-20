@@ -10,7 +10,7 @@ class ListNode {
     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 }
 
-public class Spiral_Matrix_IV {
+public class LC_04_Spiral_Matrix_IV {
     // Function to convert linked list to spiral matrix
     public int[][] spiralMatrix(int m, int n, ListNode head) {
         int[][] matrix = new int[m][n];
@@ -85,7 +85,7 @@ public class Spiral_Matrix_IV {
         }
 
         // Call the spiralMatrix method
-        Spiral_Matrix_IV obj = new Spiral_Matrix_IV();
+        LC_04_Spiral_Matrix_IV obj = new LC_04_Spiral_Matrix_IV();
         int[][] resultMatrix = obj.spiralMatrix(m, n, dummyHead.next);
 
         // Print the resulting matrix

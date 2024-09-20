@@ -1,4 +1,4 @@
-public class Bulb_Switcher_II {
+public class LC_02_Bulb_Switcher_II {
     public static void main(String[] args) {
         // Example test cases
         int n1 = 1;
@@ -46,3 +46,11 @@ class Solution {
                 return 4; // 4 configurations if 1 press
             } else if (presses == 2) {
                 return 7; // 7 configurations if 2 presses
+            } else {
+                return 8; // 8 configurations if 3 or more presses
+            }
+        }
+
+        return 1; // Default return in case no condition matches
+    }
+}

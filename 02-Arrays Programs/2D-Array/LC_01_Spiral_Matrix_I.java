@@ -1,33 +1,37 @@
-class Spiral_Matrix_II {
-    public int[][] generateMatrix(int n) {
-        int matrix[][] = new int[n][n];
+import java.util.ArrayList;
+import java.util.List;
+
+class LC_01_Spiral_Matrix_I {
+    public List<Integer> spiralOrder(int[][] matrix) {
+        List<Integer> result = new ArrayList<>();
+        
+        int m = matrix.length;
+        if (m == 0) return result;
+        int n = matrix[0].length;
+        
         int startRow = 0;
-        int endRow = n - 1;
+        int endRow = m - 1;
         int startCol = 0;
         int endCol = n - 1;
-        int val = 1;
 
         // Spiral traversal
         while (startRow <= endRow && startCol <= endCol) {
             // Traverse right across the top row
             for (int j = startCol; j <= endCol; j++) {
-                matrix[startRow][j] = val;
-                val++;
+                result.add(matrix[startRow][j]);
             }
             startRow++;
 
             // Traverse down the right column
             for (int i = startRow; i <= endRow; i++) {
-                matrix[i][endCol] = val;
-                val++;
+                result.add(matrix[i][endCol]);
             }
             endCol--;
 
             // Traverse left across the bottom row (only if there are remaining rows)
             if (startRow <= endRow) {
                 for (int j = endCol; j >= startCol; j--) {
-                    matrix[endRow][j] = val;
-                    val++;
+                    result.add(matrix[endRow][j]);
                 }
                 endRow--;
             }
@@ -35,28 +39,25 @@ class Spiral_Matrix_II {
             // Traverse up the left column (only if there are remaining columns)
             if (startCol <= endCol) {
                 for (int i = endRow; i >= startRow; i--) {
-                    matrix[i][startCol] = val;
-                    val++;
+                    result.add(matrix[i][startCol]);
                 }
                 startCol++;
             }
         }
 
-        return matrix;
+        return result;
     }
 
     public static void main(String[] args) {
-        Spiral_Matrix_II spiralMatrix = new Spiral_Matrix_II();
+        LC_01_Spiral_Matrix_I spiralMatrix = new LC_01_Spiral_Matrix_I();
         
-        int n = 3; // You can change the value of n to generate different sized matrices
-        int[][] result = spiralMatrix.generateMatrix(n);
+        int[][] matrix = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
         
-        System.out.println("Generated Spiral Matrix:");
-        for (int i = 0; i < result.length; i++) {
-            for (int j = 0; j < result[i].length; j++) {
-                System.out.print(result[i][j] + " ");
-            }
-            System.out.println();
-        }
+        List<Integer> result = spiralMatrix.spiralOrder(matrix);
+        System.out.println("Spiral Order of the matrix is: " + result);
     }
 }

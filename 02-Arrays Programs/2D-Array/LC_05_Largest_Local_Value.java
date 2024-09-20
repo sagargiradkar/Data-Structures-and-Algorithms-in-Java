@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Largest_Local_Value {
+public class LC_05_Largest_Local_Value {
 
     // Solution class as given
     static class Solution {

@@ -1,4 +1,4 @@
-public class Count_And_Say {
+public class LC_02_Count_And_Say {
     public String countAndSay(int n) {
         if (n == 1) {
             return "1";
@@ -21,7 +21,7 @@ public class Count_And_Say {
     }
 
     public static void main(String[] args) {
-        Count_And_Say solution = new Count_And_Say();
+        LC_02_Count_And_Say solution = new LC_02_Count_And_Say();
         
         int n = 5;  // Example input
         String result = solution.countAndSay(n);
