@@ -1,4 +1,4 @@
-public class BinaryTreeBi {
+public class BT_01_Binary_Tree_Bi {
     static class Node {
         int data;
         Node left;
