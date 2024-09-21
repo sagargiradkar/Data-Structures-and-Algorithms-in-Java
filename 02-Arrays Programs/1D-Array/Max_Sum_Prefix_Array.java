@@ -11,7 +11,8 @@ public class Max_Sum_Prefix_Array {
             prefix[i] = prefix[i - 1] + numbers[i]; // Accumulate sum for prefix array
         }
 
-        // Step 2: Iterate through subarrays and calculate their sums using the prefix array
+        // Step 2: Iterate through subarrays and calculate their sums using the prefix
+        // array
         for (int i = 0; i < numbers.length; i++) {
             for (int j = i; j < numbers.length; j++) {
                 // Calculate sum for subarray from index i to j
@@ -34,7 +35,7 @@ public class Max_Sum_Prefix_Array {
     }
 
     public static void main(String[] args) {
-        int numbers[] = {2, 4, 6, 8, 10}; // Test array
+        int numbers[] = { 2, 4, 6, 8, 10 }; // Test array
         prefixSubarraySum(numbers); // Call the function
     }
 }

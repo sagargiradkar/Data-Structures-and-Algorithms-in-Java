@@ -4,22 +4,22 @@ public class String_Comparison {
         String s2 = "Tony";
         String s3 = new String("Tony");
 
-        if(s1==s2){
+        if (s1 == s2) {
             System.out.println("String are equal");
-        }else{
+        } else {
             System.out.println("Strings are not equal");
         }
 
-        if(s1 == s3 ){
+        if (s1 == s3) {
             System.out.println("String are equal");
-        }else{
+        } else {
             System.out.println("Strings are not equal");
         }
-        if(s1.equals(s3) ){
+        if (s1.equals(s3)) {
             System.out.println("String are equal");
-        }else{
+        } else {
             System.out.println("Strings are not equal");
         }
-        
+
     }
 }

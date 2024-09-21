@@ -1,5 +1,6 @@
 
 import java.util.*;
+
 public class HollowPyramid {
 
     public static void main(String[] args) {
@@ -13,7 +14,7 @@ public class HollowPyramid {
                 if (j < n - i - 1) {
                     System.out.print(" ");
                 } else if (k < 2 * i + 1) {
-                    if(k==0||k==2*i || i == n-1)
+                    if (k == 0 || k == 2 * i || i == n - 1)
                         System.out.print("*");
                     else
                         System.out.print(" ");

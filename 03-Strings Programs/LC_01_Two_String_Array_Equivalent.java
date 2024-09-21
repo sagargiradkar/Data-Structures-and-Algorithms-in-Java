@@ -20,11 +20,11 @@ public class LC_01_Two_String_Array_Equivalent {
     // Main method to run the code
     public static void main(String[] args) {
         LC_01_Two_String_Array_Equivalent solution = new LC_01_Two_String_Array_Equivalent();
-        
+
         // Example input
-        String[] word1 = {"abc", "d", "ef"};
-        String[] word2 = {"abcd", "ef"};
-        
+        String[] word1 = { "abc", "d", "ef" };
+        String[] word2 = { "abcd", "ef" };
+
         // Call the method and print the result
         boolean result = solution.arrayStringsAreEqual(word1, word2);
         System.out.println("Are the concatenated arrays equal? " + result);

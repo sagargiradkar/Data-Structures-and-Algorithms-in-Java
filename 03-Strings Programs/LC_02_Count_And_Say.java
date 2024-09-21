@@ -22,8 +22,8 @@ public class LC_02_Count_And_Say {
 
     public static void main(String[] args) {
         LC_02_Count_And_Say solution = new LC_02_Count_And_Say();
-        
-        int n = 5;  // Example input
+
+        int n = 5; // Example input
         String result = solution.countAndSay(n);
         System.out.println("The " + n + "th term of the count-and-say sequence is: " + result);
     }

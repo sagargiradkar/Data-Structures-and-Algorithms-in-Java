@@ -10,11 +10,11 @@ class Solution {
             // pallindrome number
             // descending loop
             for (int j = i; j >= 1; j--) {
-                System.out.print(j+" ");
+                System.out.print(j + " ");
             }
             // ascending
             for (int j = 2; j <= i; j++) {
-                System.out.print(j+" ");
+                System.out.print(j + " ");
             }
 
             System.out.println();
