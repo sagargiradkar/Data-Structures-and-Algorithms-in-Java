@@ -1,4 +1,4 @@
-*Java Data Structures and Algorithms Daily Learning*
+Java Data Structures and Algorithms Daily Learning
 
 Welcome to my repository of daily learning and practice for Data Structures and Algorithms (DSA) in Java. This repository is designed to help anyone learn, practice, and master essential data structures and algorithms, with Java as the primary programming language.
 
