@@ -16,7 +16,7 @@ public class GA_01_Activity_Selection {
         }
 
         //lambda function ->. shortform
-        Arrays.sort(activities,Comparator.comparingDouble(o -> o[2]));
+        Arrays.sort(activities, Comparator.comparingDouble(o -> o[2]));
 
         //end time basis sortrd
         int maxAt = 0;
