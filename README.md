@@ -84,7 +84,7 @@ The repository is divided into multiple directories, each focusing on specific t
 
 In addition to the above topics, I also solve problems from the following platforms:
 
-- **Companies**  
+25. **Companies**  
   Solutions to problems from different companies.
 
 01. ***RajaSoftware***  
@@ -94,13 +94,13 @@ In addition to the above topics, I also solve problems from the following platfo
   Practice problems and coding tasks from Principle Global.
 
 03. ***Bantley*** 
-  Practice problems and coding tasks from Principle Global.
+  Practice problems and coding tasks from Bentley.
 
 
-- **GeeksforGeeks**  
+26. **GeeksforGeeks**  
   Solutions to problems from GeeksforGeeks.
 
-- **LeetCode**  
+27. **LeetCode**  
   LeetCode problem-solving repository with explanations and Java implementations.
 
 
