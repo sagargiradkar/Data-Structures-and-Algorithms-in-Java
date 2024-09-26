@@ -138,7 +138,10 @@ This repository is licensed under the MIT License. See the [LICENSE](LICENSE) fi
 
 Happy coding and learning!
 
+---
+
 command to check .java files in a directory
 ```
 dir *.java /s /b | find /c ".java"
 ```
+---
