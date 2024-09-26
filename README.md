@@ -135,6 +135,10 @@ Contributions are welcome! If you have improvements or new algorithms to add, fe
 This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ---
-**command to check .java files in a directory  :: dir *.java /s /b | find /c ".java"**
+
 Happy coding and learning!
+
+command to check .java files in a directory
+```
+dir *.java /s /b | find /c ".java"
 ```
