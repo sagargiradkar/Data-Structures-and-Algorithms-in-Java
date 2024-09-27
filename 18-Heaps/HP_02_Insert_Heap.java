@@ -18,6 +18,8 @@ public class HP_02_Insert_Heap {
                 int temp = arr.get(x);
                 arr.set(x, arr.get(par));
                 arr.set(par, temp);
+                x = par;
+                par = (x-1)/2;
             }
         }
 
@@ -53,7 +55,7 @@ public class HP_02_Insert_Heap {
 
             //step1 - swap first & last
             int temp = arr.get(0);
-            arr.set(0, arr.size() - 1);
+            arr.set(0, arr.get(arr.size() - 1));
             arr.set(arr.size() - 1, temp);
 
             //step2 - delete last 
@@ -63,9 +65,23 @@ public class HP_02_Insert_Heap {
             heapify(0);
             return data;
         }
+
+        public boolean isEmpty(){
+            return arr.size() == 0;
+        }
     }
 
     public static void main(String[] args) {
+        Heap h = new Heap();
+        h.add(3);
+        h.add(4);
+        h.add(1);
+        h.add(5);
 
+        while(!h.isEmpty()){
+            System.out.println(h.peek());
+            h.remove();
+        }
+        
     }
 }
