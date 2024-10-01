@@ -27,22 +27,23 @@ public class Tr_06_Count_Unique_SubString {
         curr.eow = true;
     }
 
-    public static int countNodes(Node root){
-        if(root == null){
+    public static int countNodes(Node root) {
+        if (root == null) {
             return 0;
         }
-        int count =0;
-        for(int i=0; i<26; i++){
-            if(root.children[i] != null){
-                count+= countNodes(root.children[i]);
+        int count = 0;
+        for (int i = 0; i < 26; i++) {
+            if (root.children[i] != null) {
+                count += countNodes(root.children[i]);
             }
         }
-        return count+1;
+        return count + 1;
     }
+
     public static void main(String[] args) {
         String str = "apple";
         //SUFFIX 
-        for(int i=0; i<str.length(); i++){
+        for (int i = 0; i < str.length(); i++) {
             String sufix = str.substring(i);
             insert(sufix);
         }
