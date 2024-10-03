@@ -1,3 +1,4 @@
+import java.util.*;
 public class D_03_Majority_Vote {
 
     // Function to find the majority elements in the array
