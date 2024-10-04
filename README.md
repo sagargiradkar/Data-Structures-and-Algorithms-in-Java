@@ -86,21 +86,28 @@ The repository is divided into various folders, each focusing on a specific data
 
 ---
 
-### Problem-Solving Platforms
+### 24. Problem-Solving Platforms
 
 In addition to the topics listed above, this repository includes solutions to problems from various coding platforms, focusing on improving problem-solving skills by practicing real-world problems.
 
-- **Companies**  
-  Practice problems from coding tasks and interviews with specific companies such as:
-  1. ***RajaSoftware***: Coding problems solved during interviews or online platforms related to this company.
-  2. ***Principle Global***: A collection of coding problems practiced for interviews or tasks from Principle Global.
-  3. ***Bantley***: Similar to the above, problems solved for interviews or tasks with Bantley.
+### 25. Problem-Solving Companies
+
+- **CodeForces**  
+  CodeForces is a popular coding platform, and this directory includes detailed solutions for CodeForces problems, along with explanations of the logic and algorithms used.
 
 - **GeeksforGeeks**  
   Solutions to common algorithmic problems from GeeksforGeeks, including explanations and Java implementations.
 
 - **LeetCode**  
   LeetCode is a popular coding platform, and this directory includes detailed solutions for LeetCode problems, along with explanations of the logic and algorithms used.
+
+---
+  Practice problems from coding tasks and interviews with specific companies such as:
+  1. ***RajaSoftware***: Coding problems solved during interviews or online platforms related to this company.
+  2. ***Principle Global***: A collection of coding problems practiced for interviews or tasks from Principle Global.
+  3. ***Bantley***: Similar to the above, problems solved for interviews or tasks with Bantley.
+
+
 
 ---
 
