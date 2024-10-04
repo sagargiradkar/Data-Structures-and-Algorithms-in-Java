@@ -1,6 +1,6 @@
 import java.util.PriorityQueue;
 
-public class D_04_Kth_Largest_Element {
+public class D_35_Kth_Largest_Element {
 
     public static int findKthLargest(int[] nums, int k) {
         PriorityQueue<Integer> pq = new PriorityQueue<>();
