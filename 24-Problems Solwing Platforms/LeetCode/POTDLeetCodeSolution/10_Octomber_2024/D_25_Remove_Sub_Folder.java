@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class 25_Remove_Sub_Folder {
+public class D_25_Remove_Sub_Folder {
     
     static class Solution {
         public List<String> removeSubfolders(String[] folder) {
