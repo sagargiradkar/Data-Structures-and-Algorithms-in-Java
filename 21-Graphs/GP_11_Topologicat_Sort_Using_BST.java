@@ -1,13 +1,10 @@
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.Stack;
 
 public class GP_11_Topological_Sort_Using_BST {
 
     static class Edge {
-
         int src;
         int dest;
 
@@ -58,19 +55,21 @@ public class GP_11_Topological_Sort_Using_BST {
     // Topological sort method
     public static void topSort(ArrayList<Edge>[] graph) {
         int indeg[] = new int[graph.length];
+        calcIndeg(graph, indeg);
 
         Queue<Integer> q = new LinkedList<>();
-
         for (int i = 0; i < indeg.length; i++) {
             if (indeg[i] == 0) {
                 q.add(i);
             }
         }
 
-        //bfs
+        int count = 0; // To detect cycles
+        // BFS
         while (!q.isEmpty()) {
             int curr = q.remove();
             System.out.print(curr + " ");
+            count++;
 
             for (int i = 0; i < graph[curr].size(); i++) {
                 Edge e = graph[curr].get(i);
@@ -80,46 +79,48 @@ public class GP_11_Topological_Sort_Using_BST {
                 }
             }
         }
+
+        // Check for cycles
+        if (count != graph.length) {
+            System.out.println("\nCycle detected. Topological sort not possible.");
+        }
     }
 
     private static void calcIndeg(ArrayList<Edge>[] graph, int indeg[]) {
-
         for (int i = 0; i < graph.length; i++) {
-            int v = i;
-            for (int j = 0; j < graph[v].size(); j++) {
-                Edge e = graph[v].get(j);
+            for (int j = 0; j < graph[i].size(); j++) {
+                Edge e = graph[i].get(j);
                 indeg[e.dest]++;
             }
         }
     }
 
     public static void main(String[] args) {
-        int V = 10;
+        int V = 6; // Adjusted to match meaningful test cases
 
         // Test Case 1: Graph with a cycle
         System.out.println("Test Case 1 (Cycle Present):");
         ArrayList<Edge>[] graph1 = createGraph(V, 1);
-        topSort(graph1); // Expected: No meaningful order due to cycle
+        topSort(graph1);
 
         // Test Case 2: Graph without a cycle
-        System.out.println("Test Case 2 (No Cycle):");
+        System.out.println("\nTest Case 2 (No Cycle):");
         ArrayList<Edge>[] graph2 = createGraph(V, 2);
-        topSort(graph2); // Expected: Topological order
+        topSort(graph2);
 
         // Test Case 3: Graph with a cycle
-        System.out.println("Test Case 3 (Cycle Present):");
+        System.out.println("\nTest Case 3 (Cycle Present):");
         ArrayList<Edge>[] graph3 = createGraph(V, 3);
-        topSort(graph3); // Expected: No meaningful order due to cycle
+        topSort(graph3);
 
         // Test Case 4: Linear graph without a cycle
-        System.out.println("Test Case 4 (No Cycle):");
+        System.out.println("\nTest Case 4 (No Cycle):");
         ArrayList<Edge>[] graph4 = createGraph(V, 4);
-        topSort(graph4); // Expected: 0 -> 1 -> 2 -> 3 -> 4
+        topSort(graph4);
 
         // Test Case 5: Complex graph
-        System.out.println("Test Case 5 (No Cycle):");
+        System.out.println("\nTest Case 5 (No Cycle):");
         ArrayList<Edge>[] graph5 = createGraph(V, 5);
-        topSort(graph5); // Expected: A valid topological order
+        topSort(graph5);
     }
-
 }
