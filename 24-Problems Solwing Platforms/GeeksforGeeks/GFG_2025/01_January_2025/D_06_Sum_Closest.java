@@ -47,4 +47,10 @@ class Solution {
             if (sum < target) {
                 left++;
             } else {
-                right
+                right--;
+            }
+        }
+        
+        return result;
+    }
+}
