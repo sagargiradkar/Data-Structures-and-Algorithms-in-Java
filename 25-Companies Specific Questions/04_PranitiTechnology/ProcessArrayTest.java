@@ -1,7 +1,7 @@
 import org.junit.Test;
 import java.util.ArrayList;
 import static org.junit.Assert.assertEquals;
-
+//public method 
 public class ProcessArrayTest {
 
     @Test
