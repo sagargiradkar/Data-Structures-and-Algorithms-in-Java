@@ -1,4 +1,5 @@
 import java.util.*;
+
 class NQueen {
     public static ArrayList<ArrayList<Integer>> nQueen(int n) {
         ArrayList<ArrayList<Integer>> result = new ArrayList<>();
@@ -31,6 +32,7 @@ class NQueen {
         }
         return true;
     }
+
     public static void main(String[] args) {
         System.out.println(nQueen(3));
     }

@@ -6,10 +6,9 @@ public class validTriangle {
         b = 34;
         c = 43;
         int r;
-        if((a+b >c) && (a+c>b) && (c+b)>a)
-        {
+        if ((a + b > c) && (a + c > b) && (c + b) > a) {
             System.out.println("Valid Trangle");
-        }else{
+        } else {
             System.out.println("Invalid Traingle");
         }
 
