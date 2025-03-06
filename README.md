@@ -152,7 +152,7 @@ command to check .java files in a directory
 dir *.java /s /b | find /c ".java"
 ```
 ---
-i am providing you a my dsa code and you have to give me the Problem Statement 
+i am providing you a my dsa code and you have to give me the Problem Statement with solution explanation 
 then my code that i written and your optimized code in same class with optimized method name to write a code and in comment section give optimized code so that i am refering that code and typing into the method for my practice
 time and space complexity analysis and 5 test cases 
 all i want in Java file only code is uncommented other part i want to cmment 
