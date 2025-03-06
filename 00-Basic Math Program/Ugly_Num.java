@@ -16,7 +16,7 @@ Time Complexity Analysis:
 - Space Complexity: O(1), as only a few variables are used.
 */
 
-public class LC_01_Ugly_Num {
+public class Ugly_Num {
     public static void main(String[] args) {
         Solution solution = new Solution();
 

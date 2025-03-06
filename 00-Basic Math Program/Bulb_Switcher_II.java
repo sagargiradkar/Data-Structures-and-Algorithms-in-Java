@@ -20,7 +20,7 @@ Test case 4: n = 3, presses = 2 → Expected output: 7
 Test case 5: n = 4, presses = 3 → Expected output: 8
 */
 
-public class LC_02_Bulb_Switcher_II {
+public class Bulb_Switcher_II {
     public static void main(String[] args) {
         int n1 = 1, presses1 = 1;
         int n2 = 2, presses2 = 1;
