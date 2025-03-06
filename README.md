@@ -152,7 +152,19 @@ command to check .java files in a directory
 dir *.java /s /b | find /c ".java"
 ```
 ---
-i am providing you a my dsa code and you have to give me the Problem Statement with solution explanation 
-then my code that i written and your optimized code in same class with optimized method name to write a code and in comment section give optimized code so that i am refering that code and typing into the method for my practice
-time and space complexity analysis and 5 test cases 
-all i want in Java file only code is uncommented other part i want to cmment 
+i am providing you a my dsa code your task is 
+
+1. Problem Statement & Solution Explanation (in comments)  
+2. my Code (Unmodified, with your method)  
+3. Optimized code method (Same class, new optimized method) 
+4. Time & Space Complexity Analysis 
+5. Five Test Cases
+
+I am providing you a my dsa code your task is The explanation should include:
+
+A clear problem statement with constraints.
+A breakdown of the solution approach, including logic and key steps.
+An optimized method, if applicable, with improvements over the original approach.
+Time and space complexity analysis for both the original and optimized solutions.
+Five test cases with expected outputs to validate correctness.
+Well-structured code with proper comments explaining each section.
