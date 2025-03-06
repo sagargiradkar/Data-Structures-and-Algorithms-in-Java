@@ -152,3 +152,8 @@ command to check .java files in a directory
 dir *.java /s /b | find /c ".java"
 ```
 ---
+
+hey gpt i am providing you a my dsa code and you have to give me the Problem Statement 
+then my code that i written and your optimized code in same class with optimized method name
+time and space complexity analysis and 5 test cases 
+all i want in Java file only code is uncommented other part i want to cmment 
