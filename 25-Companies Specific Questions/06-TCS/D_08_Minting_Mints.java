@@ -5,14 +5,14 @@ public class D_08_Minting_Mints {
         Scanner sc = new Scanner(System.in);
         int mint = sc.nextInt();
         int len = sc.nextInt();
-        sc.close(); // Closing Scanner to prevent resource leak
+        sc.close(); 
 
         int sum = mint;
-        int prev = mint; // Start with the initial value
+        int prev;
 
         for (int i = 1; i < len; i++) {
-            prev = prev + 1; // Increment the previous value
-            sum += prev; // Add it to the sum
+            prev = sum - 1; 
+            sum += prev; 
         }
 
         System.out.println(sum);
