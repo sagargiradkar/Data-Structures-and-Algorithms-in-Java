@@ -1,32 +1,31 @@
-public class InvertedRotatedHalfP {
+public class InvertedPyramidNumbers {
 
     /*
      * ========================================
      * 1. Problem Statement & Solution Explanation
      * ========================================
      * Problem Statement:
-     * Given an integer 'n', print an inverted, rotated half-pyramid pattern of stars.
-     * - The pattern should be right-aligned.
-     * - The first row contains 1 star, the second row contains 2 stars, and so on.
-     * - The last row contains 'n' stars.
+     * Given an integer 'n', print an inverted pyramid pattern of numbers.
+     * - The first row contains numbers from 1 to n.
+     * - Each subsequent row decreases by one number.
+     * - The last row contains only '1'.
      *
      * Example for n = 5:
-     *         * 
-     *       * * 
-     *     * * * 
-     *   * * * * 
-     * * * * * * 
+     * 1 2 3 4 5
+     * 1 2 3 4
+     * 1 2 3
+     * 1 2
+     * 1
      *
      * Constraints:
-     * 1 ≤ n ≤ 100 (to ensure efficiency)
+     * 1 ≤ n ≤ 100 (to maintain efficiency)
      *
      * Approach:
-     * - Iterate through rows from 0 to n.
-     * - First, print spaces (n - i) times to align the stars to the right.
-     * - Then, print '*' i times for the current row.
-     * - Move to the next line after printing all characters in a row.
+     * - Iterate through rows (i) from 0 to n.
+     * - Print numbers from 1 to (n - i).
+     * - Move to the next line after each row.
      *
-     * Time Complexity: O(n²) (Each cell is processed once)
+     * Time Complexity: O(n²) (Each cell is printed once)
      * Space Complexity: O(1) (Only loop variables are used)
      */
 
@@ -35,16 +34,10 @@ public class InvertedRotatedHalfP {
      * 2. Original Code (Unmodified, with your method)
      * ========================================
      */
-    public static void Inverted_Pyramid(int n) {
-        // Outer loop for rows
+    public static void invertedPyramidNumber(int n) {
         for (int i = 0; i <= n; i++) {
-            // Spaces for right alignment
-            for (int j = 1; j <= n - i; j++) {
-                System.out.print("  ");
-            }
-            // Stars for the pyramid
-            for (int j = 1; j <= i; j++) {
-                System.out.print("* ");
+            for (int j = 1; j < n - i + 1; j++) {
+                System.out.print(" " + j);
             }
             System.out.println();
         }
@@ -57,13 +50,13 @@ public class InvertedRotatedHalfP {
      * - Uses StringBuilder to reduce excessive System.out.print() calls.
      * - Improves efficiency by minimizing I/O operations.
      */
-    public static void optimizedInvertedPyramid(int n) {
+    public static void optimizedInvertedPyramidNumber(int n) {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i <= n; i++) {
-            // Append spaces
-            sb.append("  ".repeat(n - i));
-            // Append stars
-            sb.append("* ".repeat(i)).append("\n");
+            for (int j = 1; j < n - i + 1; j++) {
+                sb.append(" ").append(j);
+            }
+            sb.append("\n");
         }
         System.out.print(sb.toString()); // Print all at once
     }
@@ -88,19 +81,19 @@ public class InvertedRotatedHalfP {
          * 5. Test Cases
          * ========================================
          */
-        System.out.println("Inverted Rotated Half Pyramid (n = 5):");
-        Inverted_Pyramid(5);
+        System.out.println("Inverted Pyramid (n = 10):");
+        invertedPyramidNumber(10);
 
-        System.out.println("\nOptimized Inverted Rotated Half Pyramid (n = 5):");
-        optimizedInvertedPyramid(5);
+        System.out.println("\nOptimized Inverted Pyramid (n = 10):");
+        optimizedInvertedPyramidNumber(10);
 
-        System.out.println("\nInverted Rotated Half Pyramid (n = 7):");
-        Inverted_Pyramid(7);
+        System.out.println("\nInverted Pyramid (n = 5):");
+        invertedPyramidNumber(5);
 
-        System.out.println("\nInverted Rotated Half Pyramid (n = 3):");
-        Inverted_Pyramid(3);
+        System.out.println("\nInverted Pyramid (n = 7):");
+        invertedPyramidNumber(7);
 
-        System.out.println("\nInverted Rotated Half Pyramid (n = 10):");
-        Inverted_Pyramid(10);
+        System.out.println("\nInverted Pyramid (n = 3):");
+        invertedPyramidNumber(3);
     }
 }
